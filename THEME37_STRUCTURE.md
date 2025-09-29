@@ -41,22 +41,26 @@ src/Theme37/
 ## 🚀 Components Created
 
 ### Core Layout Components
+
 - **Theme37Layout** - Main layout wrapper with navbar and footer
 - **Theme37NavBar** - Responsive navigation with mobile menu
 - **Theme37Footer** - Footer with links, social media, and newsletter
 
 ### Home Page Components
+
 - **Theme37Banner** - Hero section with image and CTA buttons
 - **Theme37LeadershipImpact** - Statistics and achievements cards
 - **Theme37VisionStatement** - Quote section with leadership philosophy
 - **Theme37QuickAccess** - Navigation buttons to other pages
 
 ### Page Components
+
 - **Theme37About** - Complete about page with biography, timeline, and philosophy
 
 ## 🎨 Styling Approach
 
 Each component follows the Theme37 pattern:
+
 - **Inline styles** using JavaScript objects
 - **Responsive design** with CSS Grid and Flexbox
 - **Hover effects** with JavaScript event handlers
@@ -72,18 +76,21 @@ Each component follows the Theme37 pattern:
 ## ✨ Key Features
 
 ### Design System
+
 - Consistent color palette: `hsl(214, 84%, 15%)` (Navy) + `hsl(38, 92%, 50%)` (Gold)
 - Typography scale with responsive clamp() functions
 - Professional gradients and shadows
 - Smooth transitions and hover effects
 
 ### Responsive Design
+
 - CSS Grid for flexible layouts
 - Mobile-first approach
 - Collapsible navigation for mobile
 - Responsive typography and spacing
 
 ### Component Architecture
+
 - Modular, reusable components
 - Separation of concerns (styles in separate files)
 - Easy to maintain and extend
@@ -92,22 +99,24 @@ Each component follows the Theme37 pattern:
 ## 🔧 Usage
 
 ### Import and Use Components
+
 ```javascript
 // Use the complete home page
-import Theme37Home from '@/Theme37/Theme37Home';
+import Theme37Home from "@/Theme37/Theme37Home";
 
 // Use individual sections
-import Theme37Banner from '@/Theme37/Theme37Home/Theme37Banner';
-import Theme37NavBar from '@/Theme37/Theme37NavBar';
+import Theme37Banner from "@/Theme37/Theme37Home/Theme37Banner";
+import Theme37NavBar from "@/Theme37/Theme37NavBar";
 
 // Use new pages
-import IndexTheme37 from '@/pages/IndexTheme37';
-import AboutTheme37 from '@/pages/AboutTheme37';
+import IndexTheme37 from "@/pages/IndexTheme37";
+import AboutTheme37 from "@/pages/AboutTheme37";
 ```
 
 ### Layout Wrapper
+
 ```javascript
-import Theme37Layout from '@/components/layout/Theme37Layout';
+import Theme37Layout from "@/components/layout/Theme37Layout";
 
 const MyPage = () => (
   <Theme37Layout>

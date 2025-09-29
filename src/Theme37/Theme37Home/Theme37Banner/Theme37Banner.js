@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import portraitImage from '@/assets/pannerselvam-portrait.jpg';
-import { bannerStyles } from './styles';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import portraitImage from "@/assets/pannerselvam-portrait.jpg";
+import { bannerStyles } from "./styles";
 
 const Theme37Banner = () => {
   return (

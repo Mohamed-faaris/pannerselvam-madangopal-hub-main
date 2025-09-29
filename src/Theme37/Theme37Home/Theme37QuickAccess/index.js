@@ -1,3 +1,3 @@
-import Theme37QuickAccess from './Theme37QuickAccess';
+import Theme37QuickAccess from "./Theme37QuickAccess";
 
 export default Theme37QuickAccess;

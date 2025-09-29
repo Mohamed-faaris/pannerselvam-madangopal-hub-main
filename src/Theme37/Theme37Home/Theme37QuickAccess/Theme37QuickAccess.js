@@ -1,30 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Users, Award, TrendingUp, ArrowRight } from 'lucide-react';
-import { quickAccessStyles } from './styles';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Users, Award, TrendingUp, ArrowRight } from "lucide-react";
+import { quickAccessStyles } from "./styles";
 
 const Theme37QuickAccess = () => {
   const quickLinks = [
     {
       to: "/about",
       icon: <Users size={24} />,
-      label: "About Me"
+      label: "About Me",
     },
     {
       to: "/gallery",
       icon: <Award size={24} />,
-      label: "Gallery"
+      label: "Gallery",
     },
     {
       to: "/blog",
       icon: <TrendingUp size={24} />,
-      label: "Insights"
+      label: "Insights",
     },
     {
       to: "/contact",
       icon: <ArrowRight size={24} />,
-      label: "Connect"
-    }
+      label: "Connect",
+    },
   ];
 
   return (
@@ -36,12 +36,12 @@ const Theme37QuickAccess = () => {
             Dive deeper into insights, achievements, and vision
           </p>
         </div>
-        
+
         <div style={quickAccessStyles.grid}>
           {quickLinks.map((link, index) => (
-            <Link 
-              key={index} 
-              to={link.to} 
+            <Link
+              key={index}
+              to={link.to}
               style={quickAccessStyles.button}
               onMouseEnter={(e) => {
                 Object.assign(e.target.style, quickAccessStyles.buttonHover);

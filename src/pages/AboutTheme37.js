@@ -1,6 +1,6 @@
-import React from 'react';
-import Theme37Layout from '@/components/layout/Theme37Layout';
-import Theme37About from '@/Theme37/Theme37Home/Theme37About';
+import React from "react";
+import Theme37Layout from "@/components/layout/Theme37Layout";
+import Theme37About from "@/Theme37/Theme37Home/Theme37About";
 
 const AboutTheme37 = () => {
   return (
