@@ -27,7 +27,6 @@ const Theme37Home = () => {
         <Theme37VisionStatement />
         <Theme37QuickAccess />
       </main>
-      <Theme37Footer />
     </div>
   );
 };
