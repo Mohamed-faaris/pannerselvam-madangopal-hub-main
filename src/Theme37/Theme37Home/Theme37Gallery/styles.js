@@ -1,149 +1,170 @@
-import heroBackground from "@/assets/hero-bg.jpg";
-
-export const bannerStyles = {
+export const galleryStyles = {
   section: {
-    position: "relative",
-    minHeight: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    overflow: "hidden",
-    backgroundImage: `linear-gradient(rgba(21, 45, 82, 0.8), rgba(21, 45, 82, 0.6)), url(${heroBackground})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    padding: "5rem 0",
+    backgroundColor: "#f8fafc",
   },
 
   container: {
     maxWidth: "1200px",
     margin: "0 auto",
     padding: "0 1rem",
-    position: "relative",
-    zIndex: 10,
-    width: "100%",
+  },
+
+  hero: {
+    textAlign: "center",
+    marginBottom: "3rem",
+  },
+
+  heroTitle: {
+    fontSize: "3rem",
+    fontWeight: "bold",
+    color: "#1a365d",
+    marginBottom: "1.5rem",
+    lineHeight: "1.2",
+  },
+
+  heroSubtitle: {
+    fontSize: "1.25rem",
+    color: "#718096",
+    maxWidth: "48rem",
+    margin: "0 auto",
+    lineHeight: "1.6",
+  },
+
+  filters: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "1rem",
+    marginBottom: "3rem",
+  },
+
+  filterButton: {
+    padding: "0.5rem 1rem",
+    border: "1px solid #e2e8f0",
+    borderRadius: "0.375rem",
+    backgroundColor: "transparent",
+    color: "#4a5568",
+    cursor: "pointer",
+    transition: "all 0.2s ease",
+    fontWeight: "500",
+  },
+
+  filterButtonActive: {
+    backgroundColor: "#1a365d",
+    color: "white",
+    border: "none",
   },
 
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-    gap: "3rem",
-    alignItems: "center",
+    gap: "2rem",
+    marginBottom: "4rem",
   },
 
-  content: {
-    color: "white",
-  },
-
-  title: {
-    fontSize: "clamp(3rem, 6vw, 4rem)",
-    fontWeight: "bold",
-    lineHeight: "1.2",
-    marginBottom: "1.5rem",
-  },
-
-  accent: {
-    color: "hsl(38, 92%, 50%)",
-  },
-
-  subtitle: {
-    fontSize: "clamp(1.25rem, 3vw, 1.5rem)",
-    opacity: 0.9,
-    lineHeight: "1.6",
-    marginBottom: "2rem",
-  },
-
-  buttons: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "1rem",
-    paddingTop: "1rem",
-    "@media (min-width: 640px)": {
-      flexDirection: "row",
-    },
-  },
-
-  buttonSecondary: {
-    background: "hsl(214, 12%, 96%)",
-    color: "hsl(214, 24%, 12%)",
-    border: "none",
-    padding: "0.75rem 2rem",
-    borderRadius: "0.375rem",
-    fontWeight: "500",
-    textDecoration: "none",
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-    transition: "all 0.15s ease-out",
-    boxShadow: "0 8px 32px hsl(38, 92%, 50%, 0.25)",
-  },
-
-  buttonOutline: {
-    border: "2px solid white",
-    color: "white",
-    background: "transparent",
-    padding: "0.75rem 2rem",
-    borderRadius: "0.375rem",
-    fontWeight: "500",
-    textDecoration: "none",
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-    transition: "all 0.15s ease-out",
-  },
-
-  icon: {
-    marginLeft: "0.5rem",
-  },
-
-  imageContainer: {
-    display: "flex",
-    justifyContent: "center",
-  },
-
-  imageWrapper: {
-    position: "relative",
-  },
-
-  imageBlur: {
-    position: "absolute",
-    inset: "0",
-    background: "linear-gradient(135deg, hsl(38, 92%, 50%), hsl(38, 92%, 60%))",
-    borderRadius: "1rem",
-    filter: "blur(2rem)",
-    opacity: 0.3,
-    transform: "scale(1.1)",
-  },
-
-  image: {
-    position: "relative",
-    borderRadius: "1rem",
-    boxShadow: "0 20px 40px hsl(214, 84%, 15%, 0.15)",
-    maxWidth: "28rem",
-    width: "100%",
-    height: "auto",
-  },
-
-  scrollIndicator: {
-    position: "absolute",
-    bottom: "2rem",
-    left: "50%",
-    transform: "translateX(-50%)",
-    animation: "bounce 2s infinite",
-  },
-
-  scrollIndicatorInner: {
-    width: "1.5rem",
-    height: "2.5rem",
-    border: "2px solid white",
-    borderRadius: "9999px",
-    display: "flex",
-    justifyContent: "center",
-  },
-
-  scrollIndicatorDot: {
-    width: "0.25rem",
-    height: "0.75rem",
+  card: {
+    border: "1px solid #e2e8f0",
+    borderRadius: "0.5rem",
+    overflow: "hidden",
+    boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+    transition: "all 0.3s ease",
+    cursor: "pointer",
     backgroundColor: "white",
+  },
+
+  cardHover: {
+    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+    transform: "translateY(-2px)",
+  },
+
+  cardImageContainer: {
+    position: "relative",
+    overflow: "hidden",
+    height: "256px",
+  },
+
+  cardImage: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    transition: "transform 0.3s ease",
+  },
+
+  cardImageHover: {
+    transform: "scale(1.05)",
+  },
+
+  categoryBadge: {
+    position: "absolute",
+    top: "1rem",
+    left: "1rem",
+    backgroundColor: "#fbbf24",
+    color: "#1a365d",
+    padding: "0.25rem 0.75rem",
     borderRadius: "9999px",
-    marginTop: "0.5rem",
+    fontSize: "0.875rem",
+    fontWeight: "500",
+  },
+
+  cardContent: {
+    padding: "1.5rem",
+  },
+
+  cardTitle: {
+    fontSize: "1.25rem",
+    fontWeight: "600",
+    color: "#1a365d",
+    marginBottom: "0.5rem",
+    lineHeight: "1.3",
+    transition: "color 0.2s ease",
+  },
+
+  cardTitleHover: {
+    color: "#fbbf24",
+  },
+
+  cardDescription: {
+    color: "#718096",
+    fontSize: "0.875rem",
+    lineHeight: "1.5",
+  },
+
+  emptyState: {
+    textAlign: "center",
+    padding: "3rem",
+  },
+
+  emptyStateText: {
+    color: "#718096",
+    fontSize: "1.125rem",
+  },
+
+  statsSection: {
+    backgroundColor: "#1a365d",
+    color: "white",
+    padding: "5rem 0",
+    borderRadius: "0.5rem",
+  },
+
+  statsGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+    gap: "2rem",
+    textAlign: "center",
+  },
+
+  statNumber: {
+    fontSize: "2.5rem",
+    fontWeight: "bold",
+    color: "#fbbf24",
+    marginBottom: "0.5rem",
+    lineHeight: "1.2",
+  },
+
+  statLabel: {
+    fontSize: "0.875rem",
+    opacity: "0.9",
+    lineHeight: "1.4",
   },
 };

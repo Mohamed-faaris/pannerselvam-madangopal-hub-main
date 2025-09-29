@@ -22,10 +22,10 @@ const Theme37Home = () => {
     <div style={containerStyle}>
       <Theme37NavBar />
       <main style={mainStyle}>
-        <Theme37Banner />
-        <Theme37LeadershipImpact />
-        <Theme37VisionStatement />
-        <Theme37QuickAccess />
+        <Theme37Gallery />
+        <Theme37Media />
+        <Theme37Blog />
+        <Theme37Contact />
       </main>
     </div>
   );
