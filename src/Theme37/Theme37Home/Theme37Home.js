@@ -29,371 +29,28 @@ const Theme37Home = () => {
 
   const styles = getHomeStyles(isMobile);
 
-  const heroSectionStyle = {
-    minHeight: "100vh",
-    background:
-      "linear-gradient(135deg, hsl(214, 84%, 15%) 0%, hsl(214, 45%, 25%) 100%)",
-    display: "flex",
-    alignItems: "center",
-    position: "relative",
-    overflow: "hidden",
-  };
-
-  const heroContainerStyle = {
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "0 1rem",
-    width: "100%",
-  };
-
-  const heroGridStyle = {
-    display: "grid",
-    gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-    gap: isMobile ? "2rem" : "4rem",
-    alignItems: "center",
-  };
-
-  const heroContentStyle = {
-    color: "white",
-  };
-
-  const heroTitleStyle = {
-    fontSize: isMobile ? "2.5rem" : "3.5rem",
-    fontWeight: "bold",
-    lineHeight: "1.1",
-    marginBottom: "1.5rem",
-  };
-
-  const heroAccentStyle = {
-    color: "hsl(38, 92%, 50%)",
-  };
-
-  const heroSubtitleStyle = {
-    fontSize: isMobile ? "1.125rem" : "1.25rem",
-    lineHeight: "1.6",
-    marginBottom: "2rem",
-    opacity: "0.9",
-  };
-
-  const heroButtonsStyle = {
-    display: "flex",
-    gap: "1rem",
-    flexWrap: "wrap",
-    flexDirection: isMobile ? "column" : "row",
-    alignItems: isMobile ? "center" : "flex-start",
-  };
-
-  const buttonSecondaryStyle = {
-    display: "inline-flex",
-    alignItems: "center",
-    gap: "0.5rem",
-    padding: "0.75rem 1.5rem",
-    background: "hsl(38, 92%, 50%)",
-    color: "white",
-    textDecoration: "none",
-    borderRadius: "0.5rem",
-    fontWeight: "500",
-    transition: "all 0.15s ease-out",
-  };
-
-  const buttonOutlineStyle = {
-    display: "inline-flex",
-    alignItems: "center",
-    gap: "0.5rem",
-    padding: "0.75rem 1.5rem",
-    background: "transparent",
-    color: "white",
-    textDecoration: "none",
-    border: "2px solid white",
-    borderRadius: "0.5rem",
-    fontWeight: "500",
-    transition: "all 0.15s ease-out",
-  };
-
-  const heroImageContainerStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const heroImageWrapperStyle = {
-    position: "relative",
-    width: isMobile ? "250px" : "300px",
-    height: isMobile ? "330px" : "400px",
-    borderRadius: "1rem",
-    overflow: "hidden",
-    boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
-  };
-
-  const heroImageBlurStyle = {
-    position: "absolute",
-    top: "-10px",
-    left: "-10px",
-    right: "-10px",
-    bottom: "-10px",
-    background: "hsl(38, 92%, 50%, 0.2)",
-    filter: "blur(20px)",
-    zIndex: 1,
-  };
-
-  const heroImageStyle = {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    position: "relative",
-    zIndex: 2,
-  };
-
-  const scrollIndicatorStyle = {
-    position: "absolute",
-    bottom: "2rem",
-    left: "50%",
-    transform: "translateX(-50%)",
-    width: "2px",
-    height: "60px",
-    background: "rgba(255, 255, 255, 0.3)",
-    borderRadius: "1px",
-  };
-
-  const scrollIndicatorInnerStyle = {
-    width: "2px",
-    height: "20px",
-    background: "white",
-    borderRadius: "1px",
-  };
-
-  const highlightsSectionStyle = {
-    padding: "5rem 0",
-    background: "hsl(0, 0%, 100%)",
-  };
-
-  const highlightsContainerStyle = {
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "0 1rem",
-  };
-
-  const highlightsHeaderStyle = {
-    textAlign: "center",
-    marginBottom: "4rem",
-  };
-
-  const highlightsTitleStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    color: "hsl(214, 84%, 15%)",
-    marginBottom: "1rem",
-  };
-
-  const highlightsSubtitleStyle = {
-    fontSize: "1.25rem",
-    color: "hsl(214, 16%, 46%)",
-  };
-
-  const highlightsGridStyle = {
-    display: "grid",
-    gridTemplateColumns: isMobile
-      ? "1fr"
-      : "repeat(auto-fit, minmax(250px, 1fr))",
-    gap: isMobile ? "1.5rem" : "2rem",
-  };
-
-  const highlightCardStyle = {
-    background: "white",
-    padding: "2rem",
-    borderRadius: "1rem",
-    border: "1px solid hsl(214, 20%, 90%)",
-    boxShadow: "0 4px 20px hsl(214, 84%, 15%, 0.08)",
-    textAlign: "center",
-    transition: "transform 0.15s ease-out",
-  };
-
-  const highlightIconWrapperStyle = {
-    width: "4rem",
-    height: "4rem",
-    background: "hsl(38, 92%, 50%, 0.1)",
-    borderRadius: "0.75rem",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    margin: "0 auto 1.5rem",
-  };
-
-  const highlightIconStyle = {
-    color: "hsl(38, 92%, 50%)",
-  };
-
-  const highlightNumberStyle = {
-    fontSize: "2rem",
-    fontWeight: "bold",
-    color: "hsl(214, 84%, 15%)",
-    marginBottom: "0.5rem",
-  };
-
-  const highlightTextStyle = {
-    fontSize: "1rem",
-    color: "hsl(214, 16%, 46%)",
-  };
-
-  const visionSectionStyle = {
-    padding: "5rem 0",
-    background: "hsl(214, 84%, 15%)",
-    color: "white",
-  };
-
-  const visionContainerStyle = {
-    maxWidth: "800px",
-    margin: "0 auto",
-    padding: "0 1rem",
-    textAlign: "center",
-  };
-
-  const visionIconStyle = {
-    color: "hsl(38, 92%, 50%)",
-    marginBottom: "2rem",
-  };
-
-  const visionQuoteStyle = {
-    fontSize: isMobile ? "1.5rem" : "1.75rem",
-    fontStyle: "italic",
-    lineHeight: "1.6",
-    marginBottom: "2rem",
-  };
-
-  const visionCiteStyle = {
-    fontSize: "1.125rem",
-    fontWeight: "500",
-    opacity: "0.9",
-  };
-
-  const quickAccessSectionStyle = {
-    padding: "5rem 0",
-    background: "hsl(0, 0%, 100%)",
-  };
-
-  const quickAccessContainerStyle = {
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "0 1rem",
-  };
-
-  const quickAccessHeaderStyle = {
-    textAlign: "center",
-    marginBottom: "4rem",
-  };
-
-  const quickAccessTitleStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    color: "hsl(214, 84%, 15%)",
-    marginBottom: "1rem",
-  };
-
-  const quickAccessSubtitleStyle = {
-    fontSize: "1.25rem",
-    color: "hsl(214, 16%, 46%)",
-  };
-
-  const quickAccessGridStyle = {
-    display: "grid",
-    gridTemplateColumns: isMobile
-      ? "repeat(2, 1fr)"
-      : "repeat(auto-fit, minmax(200px, 1fr))",
-    gap: isMobile ? "1rem" : "1.5rem",
-  };
-
-  const quickAccessButtonStyle = {
-    height: isMobile ? "5rem" : "6rem",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "0.5rem",
-    border: "1px solid hsl(214, 20%, 90%)",
-    borderRadius: "0.75rem",
-    background: "white",
-    color: "hsl(214, 84%, 15%)",
-    textDecoration: "none",
-    transition: "all 0.15s ease-out",
-    padding: isMobile ? "0.75rem" : "1rem",
-  };
-  const responsiveStyles = {
-    heroGrid: {
-      "@media (max-width: 768px)": {
-        gridTemplateColumns: "1fr",
-        gap: "2rem",
-        textAlign: "center",
-      },
-    },
-    heroTitle: {
-      "@media (max-width: 768px)": {
-        fontSize: "2.5rem",
-      },
-    },
-    heroSubtitle: {
-      "@media (max-width: 768px)": {
-        fontSize: "1.125rem",
-      },
-    },
-    heroButtons: {
-      "@media (max-width: 768px)": {
-        flexDirection: "column",
-        alignItems: "center",
-      },
-    },
-    heroImageWrapper: {
-      "@media (max-width: 768px)": {
-        width: "250px",
-        height: "330px",
-      },
-    },
-    highlightsGrid: {
-      "@media (max-width: 768px)": {
-        gridTemplateColumns: "1fr",
-        gap: "1.5rem",
-      },
-    },
-    visionQuote: {
-      "@media (max-width: 768px)": {
-        fontSize: "1.5rem",
-      },
-    },
-    quickAccessGrid: {
-      "@media (max-width: 768px)": {
-        gridTemplateColumns: "repeat(2, 1fr)",
-        gap: "1rem",
-      },
-    },
-    quickAccessButton: {
-      "@media (max-width: 768px)": {
-        height: "5rem",
-        padding: "0.75rem",
-      },
-    },
-  };
-
   return (
-    <div style={containerStyle}>
+    <div style={styles.container}>
       <Theme37NavBar />
-      <main style={mainStyle}>
+      <main style={styles.main}>
         {/* Hero Section */}
-        <section style={heroSectionStyle}>
-          <div style={heroContainerStyle}>
-            <div style={heroGridStyle}>
-              <div style={heroContentStyle}>
-                <h1 style={heroTitleStyle}>
+        <section style={styles.heroSection}>
+          <div style={styles.heroContainer}>
+            <div style={styles.heroGrid}>
+              <div style={styles.heroContent}>
+                <h1 style={styles.heroTitle}>
                   Leading Innovation in the
-                  <span style={heroAccentStyle}> Digital Age</span>
+                  <span style={styles.heroAccent}> Digital Age</span>
                 </h1>
-                <p style={heroSubtitleStyle}>
+                <p style={styles.heroSubtitle}>
                   CEO of Meity | Technology Visionary | Driving Transformational
                   Change in India's Digital Ecosystem
                 </p>
-                <div style={heroButtonsStyle}>
+                <div style={styles.heroButtons}>
                   <Link
                     to="/about"
                     style={{
-                      ...buttonSecondaryStyle,
+                      ...styles.buttonSecondary,
                       ...(hoveredButton === "learn-more"
                         ? {
                             background: "hsl(38, 92%, 60%)",
@@ -410,7 +67,7 @@ const Theme37Home = () => {
                   <Link
                     to="/contact"
                     style={{
-                      ...buttonOutlineStyle,
+                      ...styles.buttonOutline,
                       ...(hoveredButton === "contact"
                         ? {
                             background: "rgba(255, 255, 255, 0.1)",
@@ -428,13 +85,13 @@ const Theme37Home = () => {
                 </div>
               </div>
 
-              <div style={heroImageContainerStyle}>
-                <div style={heroImageWrapperStyle}>
-                  <div style={heroImageBlurStyle}></div>
+              <div style={styles.heroImageContainer}>
+                <div style={styles.heroImageWrapper}>
+                  <div style={styles.heroImageBlur}></div>
                   <img
                     src={portraitImage}
                     alt="Pannerselvam Madanagopal - CEO of Meity"
-                    style={heroImageStyle}
+                    style={styles.heroImage}
                   />
                 </div>
               </div>
@@ -442,10 +99,10 @@ const Theme37Home = () => {
           </div>
 
           {/* Scroll indicator */}
-          <div style={scrollIndicatorStyle}>
+          <div style={styles.scrollIndicator}>
             <div
               style={{
-                ...scrollIndicatorInnerStyle,
+                ...styles.scrollIndicatorInner,
                 animation: "scrollPulse 2s infinite",
               }}
             ></div>
@@ -453,20 +110,20 @@ const Theme37Home = () => {
         </section>
 
         {/* Key Highlights */}
-        <section style={highlightsSectionStyle}>
-          <div style={highlightsContainerStyle}>
-            <div style={highlightsHeaderStyle}>
-              <h2 style={highlightsTitleStyle}>Leadership Impact</h2>
-              <p style={highlightsSubtitleStyle}>
+        <section style={styles.highlightsSection}>
+          <div style={styles.highlightsContainer}>
+            <div style={styles.highlightsHeader}>
+              <h2 style={styles.highlightsTitle}>Leadership Impact</h2>
+              <p style={styles.highlightsSubtitle}>
                 Driving digital transformation and technological advancement
                 across India
               </p>
             </div>
 
-            <div style={highlightsGridStyle}>
+            <div style={styles.highlightsGrid}>
               <div
                 style={{
-                  ...highlightCardStyle,
+                  ...styles.highlightCard,
                   ...(hoveredCard === 0
                     ? {
                         transform: "translateY(-4px)",
@@ -478,11 +135,11 @@ const Theme37Home = () => {
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 <div>
-                  <div style={highlightIconWrapperStyle}>
-                    <Award style={highlightIconStyle} size={32} />
+                  <div style={styles.highlightIconWrapper}>
+                    <Award style={styles.highlightIcon} size={32} />
                   </div>
-                  <h3 style={highlightNumberStyle}>15+ Years</h3>
-                  <p style={highlightTextStyle}>
+                  <h3 style={styles.highlightNumber}>15+ Years</h3>
+                  <p style={styles.highlightText}>
                     Leading Technology Innovation
                   </p>
                 </div>
@@ -490,7 +147,7 @@ const Theme37Home = () => {
 
               <div
                 style={{
-                  ...highlightCardStyle,
+                  ...styles.highlightCard,
                   ...(hoveredCard === 1
                     ? {
                         transform: "translateY(-4px)",
@@ -502,11 +159,11 @@ const Theme37Home = () => {
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 <div>
-                  <div style={highlightIconWrapperStyle}>
-                    <Users style={highlightIconStyle} size={32} />
+                  <div style={styles.highlightIconWrapper}>
+                    <Users style={styles.highlightIcon} size={32} />
                   </div>
-                  <h3 style={highlightNumberStyle}>10M+</h3>
-                  <p style={highlightTextStyle}>
+                  <h3 style={styles.highlightNumber}>10M+</h3>
+                  <p style={styles.highlightText}>
                     Lives Impacted Through Digital Initiatives
                   </p>
                 </div>
@@ -514,7 +171,7 @@ const Theme37Home = () => {
 
               <div
                 style={{
-                  ...highlightCardStyle,
+                  ...styles.highlightCard,
                   ...(hoveredCard === 2
                     ? {
                         transform: "translateY(-4px)",
@@ -526,11 +183,11 @@ const Theme37Home = () => {
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 <div>
-                  <div style={highlightIconWrapperStyle}>
-                    <TrendingUp style={highlightIconStyle} size={32} />
+                  <div style={styles.highlightIconWrapper}>
+                    <TrendingUp style={styles.highlightIcon} size={32} />
                   </div>
-                  <h3 style={highlightNumberStyle}>50+</h3>
-                  <p style={highlightTextStyle}>
+                  <h3 style={styles.highlightNumber}>50+</h3>
+                  <p style={styles.highlightText}>
                     Digital Transformation Projects
                   </p>
                 </div>
@@ -540,33 +197,33 @@ const Theme37Home = () => {
         </section>
 
         {/* Vision Statement */}
-        <section style={visionSectionStyle}>
-          <div style={visionContainerStyle}>
-            <Quote style={visionIconStyle} size={48} />
-            <blockquote style={visionQuoteStyle}>
+        <section style={styles.visionSection}>
+          <div style={styles.visionContainer}>
+            <Quote style={styles.visionIcon} size={48} />
+            <blockquote style={styles.visionQuote}>
               "Technology is not just about innovation; it's about creating
               meaningful impact that transforms societies and empowers people to
               achieve their full potential."
             </blockquote>
-            <cite style={visionCiteStyle}>— Pannerselvam Madanagopal</cite>
+            <cite style={styles.visionCite}>— Pannerselvam Madanagopal</cite>
           </div>
         </section>
 
         {/* Quick Access */}
-        <section style={quickAccessSectionStyle}>
-          <div style={quickAccessContainerStyle}>
-            <div style={quickAccessHeaderStyle}>
-              <h2 style={quickAccessTitleStyle}>Explore More</h2>
-              <p style={quickAccessSubtitleStyle}>
+        <section style={styles.quickAccessSection}>
+          <div style={styles.quickAccessContainer}>
+            <div style={styles.quickAccessHeader}>
+              <h2 style={styles.quickAccessTitle}>Explore More</h2>
+              <p style={styles.quickAccessSubtitle}>
                 Dive deeper into insights, achievements, and vision
               </p>
             </div>
 
-            <div style={quickAccessGridStyle}>
+            <div style={styles.quickAccessGrid}>
               <Link
                 to="/about"
                 style={{
-                  ...quickAccessButtonStyle,
+                  ...styles.quickAccessButton,
                   ...(hoveredQuickAccess === "about"
                     ? {
                         borderColor: "hsl(38, 92%, 50%)",
@@ -585,7 +242,7 @@ const Theme37Home = () => {
               <Link
                 to="/gallery"
                 style={{
-                  ...quickAccessButtonStyle,
+                  ...styles.quickAccessButton,
                   ...(hoveredQuickAccess === "gallery"
                     ? {
                         borderColor: "hsl(38, 92%, 50%)",
@@ -604,7 +261,7 @@ const Theme37Home = () => {
               <Link
                 to="/blog"
                 style={{
-                  ...quickAccessButtonStyle,
+                  ...styles.quickAccessButton,
                   ...(hoveredQuickAccess === "blog"
                     ? {
                         borderColor: "hsl(38, 92%, 50%)",
@@ -623,7 +280,7 @@ const Theme37Home = () => {
               <Link
                 to="/contact"
                 style={{
-                  ...quickAccessButtonStyle,
+                  ...styles.quickAccessButton,
                   ...(hoveredQuickAccess === "contact"
                     ? {
                         borderColor: "hsl(38, 92%, 50%)",

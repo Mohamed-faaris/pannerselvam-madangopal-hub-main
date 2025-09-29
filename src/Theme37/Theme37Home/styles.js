@@ -12,7 +12,8 @@ export const getHomeStyles = (isMobile) => ({
 
   heroSection: {
     minHeight: "100vh",
-    background: "linear-gradient(135deg, hsl(214, 84%, 15%) 0%, hsl(214, 45%, 25%) 100%)",
+    background:
+      "linear-gradient(135deg, hsl(214, 84%, 15%) 0%, hsl(214, 45%, 25%) 100%)",
     display: "flex",
     alignItems: "center",
     position: "relative",
@@ -172,7 +173,9 @@ export const getHomeStyles = (isMobile) => ({
 
   highlightsGrid: {
     display: "grid",
-    gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fit, minmax(250px, 1fr))",
+    gridTemplateColumns: isMobile
+      ? "1fr"
+      : "repeat(auto-fit, minmax(250px, 1fr))",
     gap: isMobile ? "1.5rem" : "2rem",
   },
 
@@ -274,7 +277,9 @@ export const getHomeStyles = (isMobile) => ({
 
   quickAccessGrid: {
     display: "grid",
-    gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(auto-fit, minmax(200px, 1fr))",
+    gridTemplateColumns: isMobile
+      ? "repeat(2, 1fr)"
+      : "repeat(auto-fit, minmax(200px, 1fr))",
     gap: isMobile ? "1rem" : "1.5rem",
   },
 
