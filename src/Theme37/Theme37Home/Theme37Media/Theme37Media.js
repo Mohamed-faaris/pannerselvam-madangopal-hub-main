@@ -48,4 +48,4 @@ const Theme37Media = () => {
   );
 };
 
-export default Theme37LeadershipImpact;
+export default Theme37Media;

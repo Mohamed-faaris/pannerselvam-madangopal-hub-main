@@ -1,8 +1,8 @@
 import React from "react";
-import Theme37Banner from "./Theme37Banner";
-import Theme37LeadershipImpact from "./Theme37LeadershipImpact";
-import Theme37VisionStatement from "./Theme37VisionStatement";
-import Theme37QuickAccess from "./Theme37QuickAccess";
+import Theme37Gallery from "./Theme37Gallery";
+import Theme37Media from "./Theme37Media";
+import Theme37Blog from "./Theme37Blog";
+import Theme37Contact from "./Theme37Contact";
 import Theme37NavBar from "../Theme37NavBar";
 import Theme37Footer from "../Theme37Footer";
 

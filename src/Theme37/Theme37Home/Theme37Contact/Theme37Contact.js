@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Users, Award, TrendingUp, ArrowRight } from "lucide-react";
 import { quickAccessStyles } from "./styles";
 
-const Theme37QuickAccess = () => {
+const Theme37Contact = () => {
   const quickLinks = [
     {
       to: "/about",
@@ -60,4 +60,4 @@ const Theme37QuickAccess = () => {
   );
 };
 
-export default Theme37QuickAccess;
+export default Theme37Contact;
