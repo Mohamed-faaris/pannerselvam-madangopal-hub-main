@@ -2,7 +2,7 @@ import React from "react";
 import { Award, Users, TrendingUp } from "lucide-react";
 import { leadershipStyles } from "./styles";
 
-const Theme37LeadershipImpact = () => {
+const Theme37Media = () => {
   const highlights = [
     {
       icon: <Award style={leadershipStyles.highlightIcon} size={32} />,

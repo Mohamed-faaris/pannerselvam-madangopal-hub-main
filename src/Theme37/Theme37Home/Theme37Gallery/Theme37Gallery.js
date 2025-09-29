@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import portraitImage from "@/assets/pannerselvam-portrait.jpg";
 import { bannerStyles } from "./styles";
 
-const Theme37Banner = () => {
+const Theme37Gallery = () => {
   return (
     <section style={bannerStyles.section}>
       <div style={bannerStyles.container}>
@@ -51,4 +51,4 @@ const Theme37Banner = () => {
   );
 };
 
-export default Theme37Banner;
+export default Theme37Gallery;

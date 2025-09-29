@@ -2,7 +2,7 @@ import React from "react";
 import { Quote } from "lucide-react";
 import { visionStyles } from "./styles";
 
-const Theme37VisionStatement = () => {
+const Theme37Blog = () => {
   return (
     <section style={visionStyles.section}>
       <div style={visionStyles.container}>
@@ -18,4 +18,4 @@ const Theme37VisionStatement = () => {
   );
 };
 
-export default Theme37VisionStatement;
+export default Theme37Blog;
