@@ -12,56 +12,68 @@
     /* Core Brand Colors */
     --background: 0 0% 100%;
     --foreground: 214 24% 12%;
-    
+
     /* Professional Navy Theme */
-    --primary: 214 84% 15%;           /* Deep navy - professional, trustworthy */
+    --primary: 214 84% 15%; /* Deep navy - professional, trustworthy */
     --primary-foreground: 0 0% 98%;
-    --primary-light: 214 45% 25%;     /* Lighter navy for hover states */
-    
+    --primary-light: 214 45% 25%; /* Lighter navy for hover states */
+
     /* Leadership Gold Accent */
-    --accent: 38 92% 50%;             /* Warm gold - leadership, innovation */
+    --accent: 38 92% 50%; /* Warm gold - leadership, innovation */
     --accent-foreground: 214 84% 15%;
-    --accent-light: 38 45% 95%;       /* Very light gold for backgrounds */
-    
+    --accent-light: 38 45% 95%; /* Very light gold for backgrounds */
+
     /* Sophisticated Grays */
-    --secondary: 214 12% 96%;         /* Light gray backgrounds */
+    --secondary: 214 12% 96%; /* Light gray backgrounds */
     --secondary-foreground: 214 24% 12%;
     --muted: 214 12% 94%;
     --muted-foreground: 214 16% 46%;
-    
+
     /* Card & Surface Colors */
     --card: 0 0% 100%;
     --card-foreground: 214 24% 12%;
     --card-border: 214 20% 90%;
-    
+
     /* Interactive Elements */
     --popover: 0 0% 100%;
     --popover-foreground: 214 24% 12%;
     --border: 214 20% 88%;
     --input: 214 20% 96%;
     --ring: 214 84% 15%;
-    
+
     /* Status Colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 71% 45%;
     --success-foreground: 0 0% 98%;
-    
+
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 15%), hsl(214 84% 25%));
-    --gradient-accent: linear-gradient(135deg, hsl(38 92% 50%), hsl(38 92% 60%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(214 12% 98%));
-    
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(214 84% 15%),
+      hsl(214 84% 25%)
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(38 92% 50%),
+      hsl(38 92% 60%)
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(0 0% 100%),
+      hsl(214 12% 98%)
+    );
+
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(214 84% 15% / 0.08);
     --shadow-medium: 0 8px 30px hsl(214 84% 15% / 0.12);
     --shadow-strong: 0 20px 40px hsl(214 84% 15% / 0.15);
     --shadow-accent: 0 8px 32px hsl(38 92% 50% / 0.25);
-    
+
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s ease-out;
-    
+
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
@@ -128,14 +140,21 @@
   }
 
   /* Professional typography scale */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: -0.025em;
   }
 
   /* Smooth transitions for interactive elements */
-  button, a, [role="button"] {
+  button,
+  a,
+  [role="button"] {
     transition: var(--transition-fast);
   }
 
@@ -149,5 +168,18 @@
   ::selection {
     background: hsl(var(--accent) / 0.2);
     color: hsl(var(--accent-foreground));
+  }
+
+  /* Scroll indicator animation */
+  @keyframes scrollPulse {
+    0%,
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
   }
 }
