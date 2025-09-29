@@ -1,0 +1,12 @@
+/* Layout Component Styles */
+
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-main {
+  flex: 1;
+  padding-top: 4rem;
+}

@@ -1,0 +1,222 @@
+/* About Page Styles */
+
+.about-hero {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(214, 12%, 98%));
+}
+
+.about-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsl(214, 84%, 15%);
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  color: hsl(214, 16%, 46%);
+  line-height: 1.6;
+}
+
+.about-section {
+  padding: 5rem 0;
+}
+
+.about-bg-primary {
+  background: hsl(0, 0%, 100%);
+}
+
+.about-bg-muted {
+  background: hsl(214, 12%, 98%);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(214, 84%, 15%);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: hsl(214, 20%, 90%);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 5rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4rem;
+  height: 4rem;
+  background: white;
+  border: 3px solid hsl(38, 92%, 50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.timeline-year {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: hsl(38, 92%, 50%);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(214, 84%, 15%);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+  color: hsl(214, 16%, 46%);
+  line-height: 1.6;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.expertise-badge {
+  background: hsl(214, 12%, 96%);
+  color: hsl(214, 84%, 15%);
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid hsl(214, 20%, 90%);
+  transition: all 0.15s ease-out;
+}
+
+.expertise-badge:hover {
+  background: hsl(38, 92%, 50%);
+  color: hsl(214, 84%, 15%);
+  border-color: hsl(38, 92%, 50%);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.stats-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(214, 20%, 90%);
+  box-shadow: 0 4px 20px hsl(214, 84%, 15%, 0.08);
+  transition: all 0.15s ease-out;
+}
+
+.stats-card:hover {
+  box-shadow: 0 8px 30px hsl(214, 84%, 15%, 0.12);
+  transform: translateY(-2px);
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(38, 92%, 50%);
+  margin-bottom: 0.5rem;
+}
+
+.stats-label {
+  font-size: 1.125rem;
+  color: hsl(214, 16%, 46%);
+}
+
+/* Biography Section */
+.bio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  align-items: start;
+  text-align: left;
+}
+
+.bio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bio-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(214, 84%, 15%);
+  margin-bottom: 1rem;
+}
+
+.bio-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bio-text {
+  color: hsl(214, 16%, 46%);
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+.expertise-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(214, 84%, 15%);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 3.5rem;
+  }
+
+  .timeline-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: -0.25rem;
+  }
+
+  .bio-grid {
+    grid-template-columns: 1fr;
+  }
+}
