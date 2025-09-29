@@ -8,6 +8,7 @@ import Theme37Footer from "../Theme37Footer";
 import { ArrowRight, Award, Users, TrendingUp, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 import portraitImage from "@/assets/pannerselvam-portrait.jpg";
+import { getHomeStyles } from "./styles";
 
 const Theme37Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,16 +27,7 @@ const Theme37Home = () => {
     return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
 
-  const containerStyle = {
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-  };
-
-  const mainStyle = {
-    flex: 1,
-    paddingTop: "4rem",
-  };
+  const styles = getHomeStyles(isMobile);
 
   const heroSectionStyle = {
     minHeight: "100vh",
